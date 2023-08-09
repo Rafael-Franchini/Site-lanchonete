@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a{text-decoration: none;}
+html,body{
+    width: 100%;
+    height:100%;
+}
+header{
+    background-color: #b93131;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.topo{
+    width: 100%;
+    display: flex;
+}
+.logo{
+    font-family: bebas neue;
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+}
+.menu-mobile{
+    display: none;
+}
+.menu-desk{
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.menu-desk ul{
+    list-style: none;
+    display: flex;
+    justify-content: right;
+}
+.menu-desk ul li{
+    margin: 0 10px;
+}
+.menu-desk ul li a{
+    font-size: 25px;
+    font-weight: normal;
+    font-family: bebas neue;
+    color: #ffffff;
+}
+.pesquisa{
+    width: 90%;
+    max-width: 700px;
+    display: flex;
+    height: 40px;
+    margin: 0 auto;
+    border-radius:25px;
+    justify-content: center;
+    overflow: hidden;
+    border: 2px solid #b93131;
+}
+.pesquisa input{
+    margin-left: -13px;
+    background-color: transparent;
+    width: 100%;
+    height: 40px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color:#252525;
+}
+.pesquisa input:focus{
+    outline: none;
+}
+.pesquisa button{
+    border-radius: 0 25px 25px 0;
+    position: absolute;
+    width: 80px;
+    margin-top: -2px;
+    height: 40px;
+    margin-left: -40px;
+    border: 0;
+    background-image: url(../images/lupa.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    background-color: #b93131;
+}
+.sessao-destaques{
+    font-family: bebas neue;
+    margin-top: 30px;
+}
+.conteudo-des {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.principaL{
+    background-image: url(../images/Hamb1.png);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    filter: grayscale(100%) blur(2px);
+    width: 60%;
+    height: 500px;
+}
+.principaL:hover{
+    filter: grayscale(0%) blur(0px);
+}
+.principaL2{
+    border-radius: 10px;
+    margin-left: 10px;
+    width: 40%;
+    height: 500px;
+
+}
+.img1{
+    background-image: url(../images/Hamb2.png);
+    filter: grayscale(100%) blur(2px);
+    background-position: center;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    height: 49%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: black;;
+}
+.img1:hover{
+    filter: grayscale(0%) blur(0px);
+}
+.img2{
+    background-image: url(../images/Hamb3.png);
+    background-position: center;
+    filter: grayscale(100%) blur(2px);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    height:49%;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: black;
+}
+.img2:hover{
+    filter: grayscale(0%) blur(0px);
+}
+.sessao-categorias{
+    background-color: #b93131;
+}
+.categorias{
+    padding-top: 5px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.categorias li{
+    font-family: bebas neue;
+    padding: 10px;
+    margin: 0 20px; 
+    list-style: none;
+    color:white;
+    font-size: 20px;
+    cursor: pointer;
+    border-bottom: solid #b93131;
+}
+.categorias .selected{
+    box-shadow: #0000005e 0px 0px 10px;
+    color: #b93131;
+    border-radius: 10px 10px 0 0;
+    border: solid white;
+    background-color: white;
+    border-bottom: 3px solid white;
+}
+footer{
+    position: absolute;
+    font-family: bebas neue;
+    width: 100%;
+    margin-top: 30px;
+    background-color: #b93131;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+footer h1{
+    font-family: bebas neue;
+}
+footer a{
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+}
+@media screen and (max-width:900px){
+    .topo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .menu-desk  li{
+        display: none;
+    }
+    .menu-desk{
+        position: fixed;
+        right:50px;
+        margin-top: -7px;
+        cursor:pointer;
+        background-image: url(../images/menu.png);
+        background-repeat: no-repeat;
+        width: 64px;
+        height: 64px;
+    }
+    .menu-mobile{
+        width: 100%;
+        background-color: #b93131;
+        color: #fff;
+        padding: 15px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .menu-mobile ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-mobile ul li{
+        margin: 10px 0;
+    }
+    .menu-mobile ul li a{
+        color: #fff;
+    }
+    .menu-mobile ul li a:hover{
+        color: #000;
+    }
+    .pesquisa{
+        overflow: hidden;
+        width: 80%;
+    }
+    .conteudo-des{
+        flex-direction: column;
+    }
+    .principaL{
+        width: 80%;
+    }
+    .principaL2{
+        margin-top: 10px;
+        width: 80%;
+        margin-left: -2px;
+    }
+    
+    .categorias li{
+        font-size: 15px;   
+    }
+    
+    
+}
+@media screen and (max-width:400px){
+    .categorias{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
